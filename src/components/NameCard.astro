@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import github from "../images/github.svg";
+import linkedin from "../images/linkedin.svg";
+---
+
+<section class="flex flex-col w-1/2 justify-between h-[100vh] py-24">
+  <div>
+    <h1 class="text-4xl font-bold tracking-normal text-slate-200 sm:text-5xl">
+      Harpreet Mall
+    </h1>
+    <h2
+      class="mt-3 text-lg font-light tracking-tight text-slate-200 sm:text-xl"
+    >
+      Experienced Full Stack Developer
+    </h2>
+    <p class="mt-4 max-w-xs leading-normal text-slate-400 font-light">
+      I build exceptional and accessible digital experiences for the web
+    </p>
+  </div>
+  <ul class="ml-1 mt-8 flex items-center">
+    <li class="mr-5 text-xs">
+      <a href="https://github.com/mallharpreet">
+        <Image
+          src={github}
+          alt="github icon -link to Harpreet's profile"
+          width="24"
+        />
+      </a>
+    </li>
+    <li class="mr-5 text-xs">
+      <a href="https://www.linkedin.com/in/mallharpreet/">
+        <Image
+          src={linkedin}
+          alt="linkedin icon -link to Harpreet's profile"
+          width="24"
+        />
+      </a>
+    </li>
+  </ul>
+</section>
